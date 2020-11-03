@@ -1,0 +1,161 @@
+html { scroll-behavior: smooth; }
+
+body { background-color: #F3F2F7; font-family: Roboto, sans-serif; font-size: 13px; padding-top: 28px; color: #414246; }
+
+.screenreader { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; /* added line */ border: 0; }
+
+.hide { display: none; }
+
+section, footer > div { margin: 0 25px; }
+
+/*-----------*/
+/*    Flex    */
+.flex-space-around { display: flex; justify-content: space-between; }
+
+/*-----------*/
+/*    Footer    */
+footer { background-color: #414246; color: #F3F2F7; padding: 20px 0 40px 0; font-size: 12px; margin-top: 100px; }
+
+div#logos div { padding: 0 5px 0 12px; display: inline-block; }
+
+div#logos div:last-child { padding-left: 7px; border-left: 1px solid #F3F2F7; height: 45px; }
+
+footer h2 { margin-top: 45px; text-transform: uppercase; }
+
+div#contact a { color: #1176A2; text-decoration: none; }
+
+div#contact a:first-child { color: #F3F2F7; }
+
+div#contact h3:last-of-type { margin-top: 20px; }
+
+div#network { margin: 45px auto; width: max-content; }
+
+div#network img { width: 41px; height: auto; }
+
+div#network img:first-of-type { margin-right: 10px; }
+
+div#extra-info { margin-bottom: 15px; }
+
+div#extra-info div:last-of-type { font-size: 9px; }
+
+div#extra-info div { line-height: 12px; vertical-align: text-bottom; width: fit-content; }
+
+/*-----------*/
+/*    Header    */
+.topnav { width: 100%; overflow: hidden; background-color: #414246; position: fixed; top: 0; z-index: 3; }
+
+.topnav #myLinks { display: none; }
+
+.topnav .selected { color: #1176A2; }
+
+.topnav a { text-transform: uppercase; color: #F3F2F7; padding: 12px 25px 15px 25px; text-decoration: none; font-size: 24px; display: block; }
+
+.topnav .icon { margin-top: 4px; font-size: 17px; color: #1176A2; }
+
+nav#myLinks a:first-of-type { padding-top: 20px; }
+
+nav#myLinks a { font-weight: bold; padding: 12px 12px 12px 30px; }
+
+.topnav a.icon { display: block; position: absolute; right: 0; top: 0; }
+
+#logo-name { width: 130px; background-color: #414246; height: 19px; color: white; }
+
+/*-----------*/
+/*    Hamburguer Icon   */
+#nav-icon { color: white; width: 45px; height: 18px; position: relative; margin: 0; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .5s ease-in-out; -moz-transition: .5s ease-in-out; -o-transition: .5s ease-in-out; transition: .5s ease-in-out; cursor: pointer; }
+
+#nav-icon span { display: block; position: absolute; height: 3px; width: 100%; background: #1176A2; opacity: 1; left: 0; -webkit-transform: rotate(0deg); -moz-transform: rotate(0deg); -o-transform: rotate(0deg); transform: rotate(0deg); -webkit-transition: .25s ease-in-out; -moz-transition: .25s ease-in-out; -o-transition: .25s ease-in-out; transition: .25s ease-in-out; }
+
+#nav-icon span:nth-child(1) { top: 0px; }
+
+#nav-icon span:nth-child(2), #nav-icon span:nth-child(3) { top: 8px; }
+
+#nav-icon span:nth-child(4) { top: 16px; }
+
+#nav-icon.open span:nth-child(1) { top: 8px; width: 0%; left: 50%; }
+
+#nav-icon.open span:nth-child(2) { -webkit-transform: rotate(45deg); -moz-transform: rotate(45deg); -o-transform: rotate(45deg); transform: rotate(45deg); }
+
+#nav-icon.open span:nth-child(3) { -webkit-transform: rotate(-45deg); -moz-transform: rotate(-45deg); -o-transform: rotate(-45deg); transform: rotate(-45deg); }
+
+#nav-icon.open span:nth-child(4) { top: 8px; width: 0%; left: 50%; }
+
+/*-----------*/
+/*    To Top Button    */
+div#toTopBar { position: fixed; bottom: 0; height: 38px; width: 100%; background-color: #F3F2F7; opacity: 0.8; text-align: right; z-index: 2; }
+
+div#toTopBar a { position: relative; top: 28%; text-decoration: none; padding-right: 25px; color: #1176A2; opacity: 1; font-weight: bold; }
+
+div#toTopBar a:hover { text-decoration: none; }
+
+/*-----------*/
+/*    Clip   */
+video { overflow: hidden; box-sizing: border-box; }
+
+/*-----------*/
+/*    About   */
+section#about { margin-top: 40px; margin-bottom: 30px; }
+
+section#about h1 { display: inline-block; font-weight: bold; text-transform: uppercase; font-size: 25px; margin: 0 10px 10px 0; }
+
+section#about span { width: 140px; display: inline-block; height: max-content; }
+
+section#about hr { color: #1176A2; border: 1px solid #1176A2; background-color: #1176A2; }
+
+section#about p { margin-bottom: 20px; }
+
+/*-----------*/
+/*    Reasons   */
+section#reasons { background-color: #414246; color: #F3F2F7; padding: 10px; }
+
+section#reasons .spotlight { color: #EBB61C; padding: 0; margin: 0; }
+
+section#reasons h2 { font-size: 24px; text-transform: uppercase; text-align: center; margin: 15px 0 40px 0; }
+
+section#reasons p { margin: 0; }
+
+section#reasons div { margin-bottom: 40px; display: flex; }
+
+section#reasons div:last-of-type { margin-bottom: 20px; }
+
+section#reasons .number-left p:first-child, section#reasons .number-right p:first-child { font-size: 80px; font-weight: bold; color: #303134; justify-content: start; }
+
+section#reasons .number-left p:last-child, section#reasons .number-right p:last-child { height: min-content; width: max-content; justify-content: end; margin: auto 0 auto 10px; }
+
+section#reasons .number-right { text-align: right; flex-direction: row-reverse; }
+
+section#reasons .number-right p:last-child { margin: auto 10px auto 0; }
+
+/*-----------*/
+/*    Main Image   */
+.main { position: relative; }
+
+.main img { width: 100%; height: auto; }
+
+.main div:first-of-type { background-color: #F3F2F7; position: absolute; bottom: 0; right: 0; height: 39px; width: 200px; margin-bottom: 3px; }
+
+.main div:first-of-type h1 { display: inline-block; text-transform: uppercase; margin: 7px 0 0 10px; }
+
+.main span { width: 89px; display: inline-block; height: max-content; }
+
+.main hr { color: #1176A2; border: 1px solid #1176A2; background-color: #1176A2; }
+
+/*-----------*/
+/*    EsACT - About   */
+section#esact { margin: 0; padding: 0; }
+
+section#esact p { margin: 10px 25px 20px 25px; }
+
+/*-----------*/
+/*    EsACT - Courses   */
+section#esact-courses { margin-top: 40px; margin-bottom: 30px; }
+
+section#esact-courses h1 { display: inline-block; font-weight: bold; text-transform: uppercase; font-size: 25px; margin: 0 10px 5px 0; }
+
+section#esact-courses span { width: 140px; display: inline-block; height: max-content; }
+
+section#esact-courses hr { color: #1176A2; border: 1px solid #1176A2; background-color: #1176A2; }
+
+section#esact-courses p { margin-bottom: 20px; }
+
+/*# sourceMappingURL=style.min.css.map */

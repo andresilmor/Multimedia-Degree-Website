@@ -1,0 +1,152 @@
+<?php
+
+    $lang = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+    $acceptLang = ['pt', 'br', 'pt-br']; 
+    $lang = in_array($lang, $acceptLang) ? $lang : 'en';
+
+    /*if(!isset($_SESSION['language']) && $lang == 'en') {
+        echo '
+            <script type="text/javascript">
+                location.replace("/en");
+            </script>
+        ';
+    }*/
+    $_SESSION["language"] = 'PT';
+    $translate = "en/";
+    include 'ptHeader.phtml';
+    
+?> 
+
+
+
+
+<!-- Multimedia Video -->
+<video width="100%" height="auto" controls autoplay loop>
+  <source src="video/movie_v3.mp4" type="video/mp4">
+  [Video apresentando a Licenciatura, não suportado no seu browser]
+</video> 
+
+<!--        -->
+
+<!-- About  -->
+
+<section itemscope itemtype="https://schema.org/Course" id="about">
+    
+    <h1>
+        Multimédia
+    </h1>
+    <span>
+        <hr>
+    </span>
+    
+    <div itemdrop="about">
+        <p>
+            Num tempo tecnológico, a sociedade necessita da imagem, da Internet e de plataformas móveis que obrigam a uma maior exigência ampla e múltipla, com profissionais que consigam abranger conhecimentos técnicos e competências criativas, capazes de produzir conteúdos para novas redes, territórios e amplas paisagens.
+        </p>
+        <p>
+            A formação em Multimédia emerge sob o domínio da cultura digital e tem como principal objetivo estabelecer e relacionar os conceitos da comunicação da imagem perante os desafios tecnológicos em que a sociedade se compõe.
+        </p>
+        <p>
+            Esta formação tem ampla consciência do que é ser múltiplo, confluindo a sua essência nos suportes técnicos que agregam a imagem e o som — incluindo a gramática fundamental da fotografia e do cinema, as novas plataformas de interação digital incorporadas na exigente mecânica criativa do webdesign ou das gramáticas integradas das redes e da programação orientada. 
+        </p>
+    </diV>
+
+    <span>
+        <hr>
+    </span>
+</section>
+
+<section id="reasons">
+    <h2>
+        <span class="spotlight">10 Motivos</span> para estudar<br>Multimédia na <span class="spotlight">EsACT</span>
+    </h2>
+    <div class="number-left">
+        <p>
+            1
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+    <div class="number-right">
+        <p>
+            2
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+    <div class="number-left">
+        <p>
+            3
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+    <div class="number-right">
+        <p>
+            4
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+    <div class="number-left">
+        <p>
+            5
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+    <div class="number-right">
+        <p>
+            6
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+    <div class="number-left">
+        <p>
+            7
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+    <div class="number-right">
+        <p>
+            8
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+    <div class="number-left">
+        <p>
+            9
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+    <div class="number-right">
+        <p>
+            10
+        </p>
+        <p>
+            Preparação para o exercício profissional no amplo especto de análise e planeamento, design, produção, publicação analógica e digital.
+        </p>
+    </div>
+</section>
+
+<script type="text/javascript">
+    document.getElementById('aHome').classList.add('selected');
+    document.getElementById("aHome").removeAttribute('href'); 
+</script>
+
+<?php
+    include 'ptFooter.phtml';
+?>

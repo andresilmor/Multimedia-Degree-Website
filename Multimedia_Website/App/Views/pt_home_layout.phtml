@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="pt-PT">
+    <head>
+        <?php
+          include 'layoutGeral.phtml';
+        ?>
+
+        <link rel="canonical" href="index.html"> <!-- colocar link quando ja online-->
+
+        <title>Página Inicial - Multimédia | EsACT-IPB</title>
+
+        <meta property="og:title" content="Página Inicial"/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:url" content="https://www.imdb.com/title/tt0117500/"/> <!-- Mudar para link website-->
+        <meta property="og:image" content="https://ia.media-imdb.com/images/rock.jpg"/> <!-- mudar para logo -->
+        <meta property="og:description " content="Website da Licenciatura Multimédia da EsACT-IPB / Multimedia Degree Website at EsACT-IPB"/>
+        <meta property="og:determiner" content="">
+        <meta property="og:locale" content="pt_PT">
+        <meta property="og:site_name" content="Multimédia | EsACT-IPB">
+        <meta property="og:video" content=""> <!-- colocar video -->
+
+        <meta name="twitter:card" content="summary"></meta> <!-- Incompleto ainda, criar twitter para multimedia?-->
+        
+    </head>
+
+    <body id="pt-home">
+		<?= $this->content() ?>
+    </body>
+</html>

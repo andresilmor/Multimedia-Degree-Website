@@ -1,0 +1,52 @@
+<?php
+
+    $translate = "/en/esact";
+    include 'ptHeader.phtml';
+    
+?> 
+
+<section id="esact">
+    <div class="main">
+        <img src="img/main_esact.jpg" alt="EsACT Photo">
+        <div class="main-title">
+            <h1>    
+                EsACT
+            </h1>
+
+            <span class="line">
+                <hr>
+            </span>
+        </div>
+    </div>
+    <p>
+        A Escola Superior de Comunicação, Administração e Turismo de Mirandela é uma unidade orgânica desconcentrada do Instituto Politécnico de Bragança, localizada na cidade de Mirandela, bem no centro geográfico da região de Trás-os-Montes e Alto Douro.
+    </p>
+</section>
+
+<section itemscope itemtype="https://schema.org/CollegeOrUniversity" id="esact-courses">
+    
+    <h1>
+        Cursos
+    </h1>
+    <span>
+        <hr>
+    </span>
+    
+    <div itemdrop="about">
+        <p>
+            Ao nível da graduação de alunos, a EsACT oferece actualmente formação que pretende convergir, nomeadamente Cursos de Especialização Tecnológica e Licenciaturas, estando em curso a concretização de condições para ministrar formação pós graduada.
+        </p>
+    </diV>
+
+</section>
+
+
+
+<script type="text/javascript">
+    document.getElementById('aEsact').classList.add('selected');
+    document.getElementById("aEsact").removeAttribute('href'); 
+</script>
+
+<?php
+    include 'ptFooter.phtml';
+?>
